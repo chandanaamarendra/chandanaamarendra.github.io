@@ -11,9 +11,10 @@ color:white;
 position:fixed;
 width:100%;
 height:100%;
+top:0;
+left:0;
 z-index:-1;
 }
-
 
 /* HERO */
 
@@ -280,51 +281,33 @@ background:linear-gradient(45deg,#9333ea,#c084fc);
 /* PUBLICATION BUTTONS */
 
 .pub-buttons{
-
 display:flex;
-
 justify-content:center;
-
-gap:20px;
-
-margin-top:20px;
-
+gap:30px;
+margin-top:30px;
 }
-
 
 .pub-btn{
-
-padding:12px 30px;
-
-border-radius:25px;
-
+padding:16px 40px;
+font-size:18px;
+border-radius:30px;
 text-decoration:none;
-
 color:white;
-
-font-weight:500;
-
+font-weight:600;
+transition:0.3s;
 }
-
 
 .medium-btn{
-
 background:black;
-
 }
-
 
 .newsletter-btn{
-
 background:linear-gradient(45deg,#0077b5,#00a0dc);
-
 }
 
-
 .pub-btn:hover{
-
-transform:scale(1.1);
-
+transform:scale(1.15);
+box-shadow:0 0 25px rgba(255,255,255,0.4);
 }
 
 
@@ -340,4 +323,67 @@ padding:30px;
 
 margin-left:40%;
 
+}
+
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+margin-top:20px;
+}
+
+.skill-card{
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+padding:20px;
+border-radius:15px;
+font-weight:500;
+transition:0.3s;
+cursor:pointer;
+}
+
+.skill-card i{
+font-size:32px;
+margin-bottom:10px;
+}
+
+.skill-card:hover{
+transform:scale(1.15);
+box-shadow:0 0 20px rgba(255,255,255,0.3);
+}
+
+/* Individual gradients */
+
+.excel-skill{
+background:linear-gradient(45deg,#16a34a,#4ade80);
+}
+
+.powerbi-skill{
+background:linear-gradient(45deg,#eab308,#fde047);
+}
+
+.sql-skill{
+background:linear-gradient(45deg,#2563eb,#60a5fa);
+}
+
+.python-skill{
+background:linear-gradient(45deg,#0891b2,#22d3ee);
+}
+
+.ml-skill{
+background:linear-gradient(45deg,#9333ea,#c084fc);
+}
+
+.analysis-skill{
+background:linear-gradient(45deg,#0ea5e9,#38bdf8);
+}
+
+.tableau-skill{
+background:linear-gradient(45deg,#f97316,#fb923c);
+}
+
+.github-skill{
+background:linear-gradient(45deg,#374151,#6b7280);
 }
