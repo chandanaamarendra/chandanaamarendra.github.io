@@ -1,28 +1,92 @@
-const roles=[
-"Data Analyst",
-"Power BI Developer",
-"SQL Developer",
-"Python Developer",
-"ML Enthusiast"
+// ROLES LIST
+const roles = [
+    "Data Analyst",
+    "Power BI Developer",
+    "SQL Developer",
+    "Python Developer",
+    "ML Enthusiast"
 ];
 
-let i=0,j=0,current="",deleting=false;
+let roleIndex = 0;
+let charIndex = 0;
+let currentRole = "";
+let isDeleting = false;
 
-function type(){
+function typeEffect() {
 
-current=roles[i];
+    const typingElement = document.getElementById("typing");
 
-document.getElementById("typing").textContent=current.substring(0,j);
+    // Safety check (prevents errors if element not loaded)
+    if (!typingElement) return;
 
-if(!deleting && j<current.length){j++;setTimeout(type,100);}
-else if(deleting && j>0){j--;setTimeout(type,50);}
-else{deleting=!deleting;if(!deleting)i=(i+1)%roles.length;setTimeout(type,800);}
+    currentRole = roles[roleIndex];
 
+    // Typing or deleting text
+    if (isDeleting) {
+        typingElement.textContent = currentRole.substring(0, charIndex--);
+    } else {
+        typingElement.textContent = currentRole.substring(0, charIndex++);
+    }
+
+    let speed = isDeleting ? 50 : 100;
+
+    // When finished typing
+    if (!isDeleting && charIndex === currentRole.length + 1) {
+        speed = 1200; // pause before deleting
+        isDeleting = true;
+    }
+
+    // When finished deleting
+    else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        roleIndex = (roleIndex + 1) % roles.length;
+        speed = 300;
+    }
+
+    setTimeout(typeEffect, speed);
 }
 
-type();
+
+// Start typing after page loads
+document.addEventListener("DOMContentLoaded", function () {
+    typeEffect();
+});
 
 
-particlesJS("particles-js",{
-particles:{number:{value:60},color:{value:"#ff0000"},size:{value:3}}
+// PARTICLES BACKGROUND
+particlesJS("particles-js", {
+    particles: {
+        number: {
+            value: 60,
+            density: {
+                enable: true,
+                value_area: 800
+            }
+        },
+        color: {
+            value: "#38bdf8"
+        },
+        shape: {
+            type: "circle"
+        },
+        opacity: {
+            value: 0.5
+        },
+        size: {
+            value: 3,
+            random: true
+        },
+        move: {
+            enable: true,
+            speed: 2
+        }
+    },
+    interactivity: {
+        events: {
+            onhover: {
+                enable: true,
+                mode: "repulse"
+            }
+        }
+    }
 });
