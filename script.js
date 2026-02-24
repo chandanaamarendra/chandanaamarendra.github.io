@@ -4,11 +4,11 @@
 
 const roles = [
 
-"Data Analyst",
-"Power BI Developer",
-"SQL Developer",
-"Python Developer",
-"ML Enthusiast"
+"Data Analyst ",
+"Power BI Developer ",
+"SQL Developer ",
+"Python Developer ",
+"ML Enthusiast "
 
 ];
 
