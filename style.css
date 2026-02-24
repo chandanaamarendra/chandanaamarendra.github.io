@@ -110,7 +110,7 @@ min-height:520px;          /* same as hero */
 padding:50px;
 
 border-radius:25px;
-
+background: linear-gradient(45deg,#121521,#38476b,#b6192e,#ffc1ac);
 display:flex;
 flex-direction:column;
 justify-content:center;
