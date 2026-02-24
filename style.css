@@ -27,7 +27,7 @@ position:relative;
 }
 
 .hero-card{
-background:rgba(255,255,255,0.05);
+background:url("hero-bg.jpg");
 backdrop-filter:blur(20px);
 padding:45px;
 border-radius:20px;
@@ -195,34 +195,91 @@ text-align:center;
 transition:0.3s;
 }
 
-.project:hover{
-transform:translateY(-8px) scale(1.03);
+
+/* PROJECTS CONTAINER */
+
+.projects {
+
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+
+margin-top:15px;
+
 }
 
+/* BASE BUTTON STYLE */
 
-/* COLORFUL PROJECT CARDS */
+.project-btn {
 
-.excel{
-background:linear-gradient(45deg, #16a34a, #22c55e);
+display:inline-block;
+
+padding:14px 22px;
+
+border-radius:10px;
+
+color:white;
+
+text-decoration:none;
+
+font-weight:600;
+
+transition:0.3s;
+
+box-shadow:0 4px 12px rgba(0,0,0,0.2);
+
 }
 
-.sql{
-background:linear-gradient(45deg, #2563eb, #3b82f6);
+/* EXCEL */
+
+.project-btn.excel {
+
+background:linear-gradient(135deg,#11998e,#38ef7d);
+
 }
 
-.powerbi{
-background:linear-gradient(45deg, #ca8a04, #facc15);
+/* SQL */
+
+.project-btn.sql {
+
+background:linear-gradient(135deg,#4776E6,#8E54E9);
+
+}
+
+/* POWER BI */
+
+.project-btn.powerbi {
+
+background:linear-gradient(135deg,#f7971e,#ffd200);
 color:black;
+
 }
 
-.python{
-background:linear-gradient(45deg, #0891b2, #06b6d4);
+/* PYTHON */
+
+.project-btn.python {
+
+background:linear-gradient(135deg,#306998,#FFD43B);
+color:black;
+
 }
 
-.ml{
-background:linear-gradient(45deg, #7c3aed, #a855f7);
+/* MACHINE LEARNING */
+
+.project-btn.ml {
+
+background:linear-gradient(135deg,#ff416c,#ff4b2b);
+
 }
 
+/* HOVER EFFECT */
+
+.project-btn:hover {
+
+transform:translateY(-4px);
+box-shadow:0 8px 20px rgba(0,0,0,0.3);
+
+}
 
 /* PUBLICATIONS */
 
@@ -264,16 +321,30 @@ background:linear-gradient(45deg, #0077b5, #00a0dc);
 
 footer{
 text-align:center;
-padding:30px;
+padding:40px;
 background:#020617;
 }
 
-footer a{
+.contact-links{
+display:flex;
+flex-direction:column;
+gap:15px;
+align-items:center;
+margin-top:20px;
+}
+
+.contact-item{
 color:#38bdf8;
 text-decoration:none;
 font-size:18px;
+transition:0.3s;
 }
 
-footer a:hover{
-text-decoration:underline;
+.contact-item i{
+margin-right:10px;
+}
+
+.contact-item:hover{
+color:#60a5fa;
+transform:translateX(5px);
 }
