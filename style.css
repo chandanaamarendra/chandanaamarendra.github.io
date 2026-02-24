@@ -59,7 +59,7 @@ min-height:600px;
 display:flex;
 justify-content:center;
 align-items:center;
-background:url("hero-bg.jpg");
+
 background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
@@ -71,7 +71,7 @@ min-height:520px;
 width:420px;
 padding:50px 40px;
 border-radius:25px;
-background:rgba(0,0,0,0.6);
+background:url("hero-bg.jpg");
 backdrop-filter:blur(10px);
 display:flex;
 flex-direction:column;
@@ -221,9 +221,9 @@ margin-bottom:30px;
 
 .skills-grid{
 display:grid;
-grid-template-columns:repeat(3,1fr);
+grid-template-columns:repeat(4,1fr);
 gap:25px;
-justify-items:center;
+_toggle: none;
 }
 
 .skill-card{
@@ -424,6 +424,13 @@ grid-template-columns:1fr;
 
 .project.ml{
 grid-column:span 1;
+}
+
+}
+@media (max-width:500px){
+
+.skills-grid{
+grid-template-columns:1fr;
 }
 
 }
