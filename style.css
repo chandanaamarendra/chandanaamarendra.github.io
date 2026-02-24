@@ -211,37 +211,80 @@ font-size:14px;
 
 /* projects */
 
-/* PROJECTS BIGGER */
-
-.projects{
-width:60%;
-}
 
 .project-grid{
+
 display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:30px;
+
+grid-template-columns:repeat(2, 200px);
+
+gap:25px;
+
+margin-top:30px;
+
+justify-content:center;
+
 }
+
 
 .project{
 
-padding:40px;
+display:flex;
 
-font-size:20px;
+align-items:center;
 
-border-radius:18px;
+justify-content:center;
 
-text-align:center;
+height:80px;
+
+border-radius:15px;
 
 font-weight:600;
+
+font-size:18px;
+
+text-decoration:none;
+
+color:white;
+
+box-shadow:0 6px 15px rgba(0,0,0,0.3);
 
 transition:0.3s;
 
 }
 
+
+/* COLORS */
+
+.project.excel{
+background:linear-gradient(135deg,#16a34a,#4ade80);
+}
+
+.project.sql{
+background:linear-gradient(135deg,#2563eb,#60a5fa);
+}
+
+.project.powerbi{
+background:linear-gradient(135deg,#facc15,#f59e0b);
+color:black;
+}
+
+.project.python{
+background:linear-gradient(135deg,#0891b2,#22d3ee);
+}
+
+.project.ml{
+background:linear-gradient(135deg,#9333ea,#ec4899);
+}
+
+
+/* HOVER EFFECT */
+
 .project:hover{
 
 transform:scale(1.05);
+
+box-shadow:0 12px 25px rgba(0,0,0,0.4);
 
 }
 
