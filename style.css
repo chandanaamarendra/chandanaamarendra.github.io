@@ -55,9 +55,9 @@ margin-bottom:15px;
 /* NAME */
 
 .name{
-font-style:italic;
+font-family: "Mangolia Script", cursive;
 font-size:36px;
-background:linear-gradient(45deg, #facc15, #f97316, #38bdf8);
+background:linear-gradient(45deg, #faee21, #f6e600, #00ffff);
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent;
 margin-bottom:10px;
@@ -117,7 +117,7 @@ justify-content:center;
 align-items:center;
 text-align:center;
 padding:80px;
-background:linear-gradient(135deg, #020617, #0f172a);
+background: linear-gradient(45deg, #121521, #38476b, #b6192e, #ffc1ac);
 }
 
 .about h1{
@@ -142,38 +142,50 @@ gap:60px;
 
 /* SKILLS */
 
-.section{
-width:40%;
-}
-
-.skills{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:20px;
-}
-
 .skill{
-background:rgba(255,255,255,0.05);
-padding:20px;
-border-radius:12px;
+padding:25px;
+border-radius:15px;
 text-align:center;
 transition:0.3s;
+color:white;
+font-weight:500;
+}
+
+/* individual colors */
+
+.skill:nth-child(1){
+background:linear-gradient(135deg,#306998,#FFD43B);
+}
+
+.skill:nth-child(2){
+background:linear-gradient(135deg,#1e3a8a,#3b82f6);
+}
+
+.skill:nth-child(3){
+background:linear-gradient(135deg,#facc15,#eab308);
+color:black;
+}
+
+.skill:nth-child(4){
+background:linear-gradient(135deg,#16a34a,#22c55e);
+}
+
+.skill:nth-child(5){
+background:linear-gradient(135deg,#9333ea,#c084fc);
+}
+
+.skill:nth-child(6){
+background:linear-gradient(135deg,#06b6d4,#67e8f9);
+color:black;
 }
 
 .skill:hover{
-transform:translateY(-5px);
-background:rgba(255,255,255,0.1);
+transform:translateY(-8px) scale(1.05);
 }
-
-.skill i{
-font-size:30px;
-display:block;
-margin-bottom:10px;
-color:#38bdf8;
-}
-
 
 /* PROJECTS */
+
+/* PROJECTS SECTION */
 
 .projects{
 width:60%;
@@ -181,53 +193,55 @@ width:60%;
 
 .project-grid{
 display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:20px;
+grid-template-columns:repeat(2, 1fr);
+gap:25px;
+margin-top:20px;
 }
 
 .project{
-padding:25px;
+padding:30px;
 border-radius:15px;
 text-decoration:none;
 color:white;
 font-weight:600;
+font-size:18px;
 text-align:center;
 transition:0.3s;
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
 }
 
+/* COLORS */
 
-/* PROJECTS CONTAINER */
-
-.projects {
-
-display:flex;
-flex-wrap:wrap;
-gap:15px;
-
-margin-top:15px;
-
+.project.excel{
+background:linear-gradient(135deg,#16a34a,#22c55e);
 }
 
-/* BASE BUTTON STYLE */
+.project.sql{
+background:linear-gradient(135deg,#2563eb,#3b82f6);
+}
 
-.project-btn {
+.project.powerbi{
+background:linear-gradient(135deg,#facc15,#eab308);
+color:black;
+}
 
-display:inline-block;
+.project.python{
+background:linear-gradient(135deg,#06b6d4,#0891b2);
+}
 
-padding:14px 22px;
+.project.ml{
+background:linear-gradient(135deg,#9333ea,#7c3aed);
+}
 
-border-radius:10px;
+.projects h2{
+margin-bottom:10px;
+}
 
-color:white;
+/* HOVER */
 
-text-decoration:none;
-
-font-weight:600;
-
-transition:0.3s;
-
-box-shadow:0 4px 12px rgba(0,0,0,0.2);
-
+.project:hover{
+transform:translateY(-8px) scale(1.04);
+box-shadow:0 20px 40px rgba(0,0,0,0.5);
 }
 
 /* EXCEL */
@@ -321,8 +335,12 @@ background:linear-gradient(45deg, #0077b5, #00a0dc);
 
 footer{
 text-align:center;
-padding:40px;
-background:#020617;
+padding:60px 20px;
+background:linear-gradient(135deg,#020617,#020617,#000814);
+}
+
+footer h2{
+margin-bottom:25px;
 }
 
 .contact-links{
@@ -330,7 +348,6 @@ display:flex;
 flex-direction:column;
 gap:15px;
 align-items:center;
-margin-top:20px;
 }
 
 .contact-item{
@@ -340,10 +357,10 @@ font-size:18px;
 transition:0.3s;
 }
 
-.contact-item i{
-margin-right:10px;
+.contact-item:hover{
+color:#60a5fa;
+transform:scale(1.05);
 }
-
 .contact-item:hover{
 color:#60a5fa;
 transform:translateX(5px);
