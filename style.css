@@ -401,3 +401,40 @@ transform:scale(1.05);
 color:#60a5fa;
 transform:translateX(5px);
 }
+
+/* SECTION BOX like About */
+
+.box{
+background: linear-gradient(45deg, #121521, #38476b, #b6192e, #ffc1ac);
+padding:40px;
+border-radius:20px;
+box-shadow:0 0 25px rgba(0,0,0,0.3);
+}
+
+/* fix bottom section layout */
+
+.bottom-section{
+display:flex;
+gap:40px;
+padding:60px;
+align-items:flex-start;
+}
+
+/* skills width */
+
+.skills-section{
+width:50%;
+}
+
+/* projects width */
+
+.projects{
+width:50%;
+margin-left:0;
+}
+
+/* round about section corners */
+
+.about{
+border-radius:20px;
+}
