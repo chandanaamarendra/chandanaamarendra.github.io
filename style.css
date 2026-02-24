@@ -187,14 +187,17 @@ line-height:1.8;
 ================================= */
 
 .bottom-section{
+
 display:flex;
-justify-content:center;
-align-items:flex-start;
+
+flex-direction:column;   /* STACK vertically */
+
+align-items:center;
+
 gap:60px;
+
 padding:80px;
-max-width:1200px;
-margin:0 auto;
-flex-wrap:wrap;   /* FIX: allows proper wrapping */
+
 }
 
 
@@ -203,12 +206,21 @@ flex-wrap:wrap;   /* FIX: allows proper wrapping */
 ================================= */
 
 .skills-section{
-flex:1;
-min-width:350px;
-padding:40px;
+
+width:900px;   /* fixed width like projects */
+
+max-width:90%;
+
+padding:50px;
+
 border-radius:25px;
+
 background: linear-gradient(45deg,#121521,#38476b,#b6192e,#ffc1ac);
+
 box-shadow:0 10px 30px rgba(0,0,0,0.35);
+
+text-align:center;
+
 }
 
 .skills-section h2{
@@ -247,12 +259,19 @@ height:50px;
 ================================= */
 
 .projects{
-flex:1;
-min-width:350px;
+
+width:900px;
+
+max-width:90%;
+
 padding:50px;
+
 border-radius:25px;
+
 background: linear-gradient(45deg,#121521,#38476b,#b6192e,#ffc1ac);
+
 box-shadow:0 10px 30px rgba(0,0,0,0.35);
+
 }
 
 .projects h2{
