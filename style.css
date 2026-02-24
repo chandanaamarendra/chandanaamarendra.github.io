@@ -57,13 +57,25 @@ border-radius:20px;
 
 }
 .hero-card{
-  background:url("hero-bg.jpg");
-  backdrop-filter:blur(20px);
-  padding:45px;
-  border-radius:20px;
-  text-align:center;
-  width:380px;
-  box-shadow:0 0 40px rgba(0,0,0,0.6); }
+
+min-height:520px;         
+
+width:420px;               
+
+padding:50px 40px;
+
+border-radius:25px;
+
+background:rgba(0,0,0,0.55);
+
+backdrop-filter:blur(8px);
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+}
 
 /* NAME */ 
 .name{
@@ -79,21 +91,18 @@ border-radius:20px;
 
 width:50%;
 
-min-height:80vh;
+min-height:520px;          /* same as hero */
+
+padding:50px;
+
+border-radius:25px;
 
 display:flex;
-
 flex-direction:column;
-
 justify-content:center;
-
 align-items:center;
 
 text-align:center;
-
-padding:60px;
-
-border-radius:20px;
 
 background:linear-gradient(45deg,#121521,#38476b,#b6192e,#ffc1ac);
 
@@ -109,8 +118,14 @@ line-height:1.8;
 
 .profile{
 
-width:150px;
+width:180px;
+height:180px;
+
 border-radius:50%;
+
+object-fit:cover;         
+
+margin-bottom:20px;
 
 }
 
@@ -134,16 +149,15 @@ border-radius:20px;
 
 display:flex;
 
-min-height:110vh;
+min-height:100vh;
+
+gap:60px;
 
 padding:60px;
-
-gap:40px;
 
 align-items:center;
 
 }
-
 .bottom-section{
 
 display:flex;
@@ -151,6 +165,8 @@ display:flex;
 gap:40px;
 
 padding:60px;
+
+align-items:center;
 
 }
 
