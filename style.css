@@ -45,9 +45,6 @@ height:160px;
 border-radius:50%;
 object-fit:cover;
 border:4px solid #38bdf8;
-box-shadow:
-0 0 15px #38bdf8,
-0 0 40px rgba(56,189,248,0.5);
 margin-bottom:15px;
 }
 
@@ -56,7 +53,7 @@ margin-bottom:15px;
 
 .name{
 font-family: 'Playfair Display', serif;
-font-size:22px;
+font-size:32px;
 background: linear-gradient(90deg, #f3b0f2, #fdf5b9);
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent;
@@ -149,7 +146,7 @@ gap:60px;
 
 .skills-grid{
 display:grid;
-grid-template-columns:repeat(2, 1fr);
+grid-template-columns:repeat(2,1fr);
 gap:25px;
 }
 
@@ -158,23 +155,28 @@ display:flex;
 align-items:center;
 gap:15px;
 padding:22px 30px;
-border-radius:16px;
+border-radius:18px;
 font-size:18px;
 font-weight:600;
 color:white;
 transition:0.3s;
-box-shadow:0 8px 20px rgba(0,0,0,0.25);
 }
 
-.skill-card img{
+.icon-box{
+background:white;
+padding:8px;
+border-radius:10px;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.icon-box img{
 width:32px;
 height:32px;
-background:white;
-padding:6px;
-border-radius:8px;
 }
 
-/* SAME COLORS AS YOUR IMAGE */
+/* SAME COLORS */
 
 .excel{
 background:linear-gradient(90deg,#16a34a,#4ade80);
@@ -202,33 +204,7 @@ background:linear-gradient(90deg,#ec4899,#f472b6);
 }
 
 .skill-card:hover{
-transform:translateY(-6px) scale(1.03);
-}
-/* Individual colors */
-
-.skill-card.excel{
-background:linear-gradient(45deg,#16a34a,#4ade80);
-}
-
-.skill-card.sql{
-background:linear-gradient(45deg,#2563eb,#60a5fa);
-}
-
-.skill-card.powerbi{
-background:linear-gradient(45deg,#facc15,#f59e0b);
-color:black;
-}
-
-.skill-card.python{
-background:linear-gradient(45deg,#0891b2,#22d3ee);
-}
-
-.skill-card.analysis{
-background:linear-gradient(45deg,#9333ea,#c084fc);
-}
-
-.skill-card.ml{
-background:linear-gradient(45deg,#ec4899,#f472b6);
+transform:translateY(-6px);
 }
 
 /* PROJECTS */
