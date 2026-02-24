@@ -1,10 +1,6 @@
-const roles = [
-"Data Analyst",
-"Power BI Developer",
-"SQL Developer",
-"Python Developer",
-"ML Enthusiast"
-];
+/* TYPING */
+
+const roles=["Data Analyst","Power BI Developer","SQL Developer","Python Developer","ML Enthusiast"];
 
 let i=0,j=0,current="",deleting=false;
 
@@ -43,3 +39,22 @@ setTimeout(type,800);
 }
 
 type();
+
+
+/* PARTICLES */
+
+particlesJS("particles-js",{
+
+particles:{
+
+number:{value:80},
+
+color:{value:"#ff0000"},
+
+size:{value:3},
+
+move:{speed:2}
+
+}
+
+});
