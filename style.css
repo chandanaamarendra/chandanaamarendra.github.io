@@ -184,17 +184,19 @@ padding:80px;
 
 width:320px;
 
+padding:40px;
+
+border-radius:25px;
+
+background: linear-gradient(45deg,#121521,#38476b,#b6192e,#ffc1ac);
+
+box-shadow:0 10px 30px rgba(0,0,0,0.35);
+
 }
 
-.skills-grid{
+.skills-section h2{
 
-display:grid;
-
-grid-template-columns:repeat(3, 1fr);
-
-gap:40px;
-
-margin-top:30px;
+margin-bottom:30px;
 
 }
 
