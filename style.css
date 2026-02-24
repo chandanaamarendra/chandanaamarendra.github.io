@@ -395,62 +395,162 @@ grid-column:span 1;
 
 }
 
-/* publications */
-
+/* PUBLICATIONS */
 
 .publications{
 
 width:700px;
 
-margin:80px auto;   /* centers horizontally */
+margin:80px auto;
+
+padding:50px;
+
+border-radius:25px;
+
+background: linear-gradient(45deg,#121521,#38476b,#b6192e,#ffc1ac);
+
+box-shadow:0 10px 30px rgba(0,0,0,0.35);
 
 text-align:center;
 
 }
+
+/* GRID ALIGNMENT */
+
+.pub-grid{
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+margin-top:25px;
+
+flex-wrap:wrap;
+
+}
+
+/* BUTTON */
 
 .pub{
 
 display:inline-block;
 
-padding:18px 40px;
+padding:20px 45px;
 
-font-size:28px;
+font-size:20px;
 
 font-weight:600;
 
-border-radius:12px;
+border-radius:15px;
 
 text-decoration:none;
 
 color:white;
 
-margin:15px;
+transition:0.3s;
+
+}
+
+/* COLORS */
+
+.medium{
+
+background:linear-gradient(135deg,#000000,#333333);
+
+}
+
+.newsletter{
+
+background:linear-gradient(135deg,#0077b5,#1d4ed8);
+
+}
+
+/* HOVER */
+
+.pub:hover{
+
+transform:scale(1.08);
+
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+
+}
+
+/* CONTACT */
+
+footer{
+
+width:700px;
+
+margin:80px auto;
+
+padding:40px;
+
+border-radius:25px;
+
+background: linear-gradient(45deg,#121521,#38476b,#b6192e,#ffc1ac);
+
+box-shadow:0 10px 30px rgba(0,0,0,0.35);
+
+text-align:center;
+
+color:white;
+
+}
+
+/* CONTACT LINKS */
+
+.contact-links{
+
+margin-top:20px;
+
+font-size:18px;
+
+}
+
+/* EMAIL */
+
+.contact-item{
+
+display:inline-block;
+
+margin-bottom:15px;
+
+color:#38bdf8;
+
+text-decoration:none;
+
+}
+
+/* GITHUB | LINKEDIN */
+
+footer p{
+
+margin-top:10px;
+
+font-size:18px;
+
+}
+
+footer p a{
+
+color:#38bdf8;
+
+text-decoration:none;
+
+margin:0 10px;
 
 transition:0.3s;
 
 }
-.medium{
-background:linear-gradient(135deg,#000000,#333333);
+
+footer p a:hover{
+
+color:#60a5fa;
+
 }
 
-.newsletter{
-background:linear-gradient(135deg,#0077b5,#1d4ed8);
-}
-
-.pub:hover{
-transform:scale(1.08);
-box-shadow:0 10px 25px rgba(0,0,0,0.4);
-}
-
-
-/* contact */
-
-footer{
-
-text-align:center;
-color:white;
-padding:40px;
-
-background:none;
-
+footer i{
+margin-right:8px;
 }
