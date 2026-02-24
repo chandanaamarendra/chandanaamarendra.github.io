@@ -56,7 +56,7 @@ margin-bottom:15px;
 
 .name{
 font-family: 'Playfair Display', serif;
-font-size:42px;
+font-size:22px;
 background: linear-gradient(90deg, #f3b0f2, #fdf5b9);
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent;
@@ -147,42 +147,63 @@ gap:60px;
 
 /* SKILLS */
 
-.skills-section{
-width:40%;
-}
-
-.skills-title{
-margin-bottom:20px;
-font-size:28px;
-}
-
 .skills-grid{
 display:grid;
 grid-template-columns:repeat(2, 1fr);
-gap:20px;
+gap:25px;
 }
 
 .skill-card{
 display:flex;
 align-items:center;
-gap:12px;
-padding:18px;
-border-radius:12px;
+gap:15px;
+padding:22px 30px;
+border-radius:16px;
+font-size:18px;
 font-weight:600;
-font-size:16px;
 color:white;
 transition:0.3s;
-box-shadow:0 8px 20px rgba(0,0,0,0.3);
+box-shadow:0 8px 20px rgba(0,0,0,0.25);
 }
 
-.skill-card i{
-font-size:22px;
+.skill-card img{
+width:32px;
+height:32px;
+background:white;
+padding:6px;
+border-radius:8px;
+}
+
+/* SAME COLORS AS YOUR IMAGE */
+
+.excel{
+background:linear-gradient(90deg,#16a34a,#4ade80);
+}
+
+.sql{
+background:linear-gradient(90deg,#2563eb,#60a5fa);
+}
+
+.powerbi{
+background:linear-gradient(90deg,#facc15,#f59e0b);
+color:black;
+}
+
+.python{
+background:linear-gradient(90deg,#0891b2,#22d3ee);
+}
+
+.analysis{
+background:linear-gradient(90deg,#9333ea,#c084fc);
+}
+
+.ml{
+background:linear-gradient(90deg,#ec4899,#f472b6);
 }
 
 .skill-card:hover{
-transform:translateY(-6px) scale(1.05);
+transform:translateY(-6px) scale(1.03);
 }
-
 /* Individual colors */
 
 .skill-card.excel{
