@@ -5,171 +5,103 @@ background:#0f172a;
 color:white;
 }
 
-/* HERO */
+/* TOP SECTION */
 
-.hero{
+.top-section{
+display:flex;
+}
 
+/* HERO LEFT */
+
+.hero-container{
+
+width:50%;
 height:100vh;
 
 background:url("hero-bg.jpg");
-
 background-size:cover;
-
 background-position:center;
 
 display:flex;
-
 justify-content:center;
-
 align-items:center;
 
 position:relative;
-
 }
-
-/* PARTICLES */
 
 #particles-js{
-
 position:absolute;
-
 width:100%;
-
 height:100%;
-
-z-index:1;
-
 }
-
-/* HERO CARD */
 
 .hero-card{
 
-position:relative;
-
-z-index:2;
-
-background:rgba(15,23,42,0.8);
+background:rgba(15,23,42,0.85);
 
 padding:40px;
-
 border-radius:20px;
-
 text-align:center;
+width:350px;
 
-width:400px;
-
+position:relative;
+z-index:2;
 }
 
-/* PROFILE */
-
-.profile{
-
-width:150px;
-height:150px;
-
-border-radius:50%;
-
-border:4px solid red;
-
-box-shadow:0 0 20px red;
-
-}
-
-/* NAME */
-
-.name{
-
-color:#4ade80;
-
-}
-
-/* BUTTONS */
-
-.btn{
-
-padding:12px 25px;
-
-margin:5px;
-
-border-radius:10px;
-
-text-decoration:none;
-
-color:white;
-
-display:inline-block;
-
-}
-
-.green{background:#22c55e;}
-.blue{background:#38bdf8;}
-.orange{background:#f59e0b;}
-
-
-/* ABOUT */
+/* ABOUT RIGHT */
 
 .about{
-
+width:50%;
 padding:60px;
-
 background:linear-gradient(135deg,#0f172a,#1e293b);
-
 }
 
-/* DUAL SECTION */
+/* SKILLS */
 
-.dual{
-
+.bottom-section{
 display:flex;
-
-gap:30px;
-
 padding:40px;
-
 }
 
-.box{
+.skills{
+width:50%;
+}
 
-flex:1;
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
 
-background:#1e293b;
+.skill-card{
+
+background:linear-gradient(135deg,#3b82f6,#06b6d4);
 
 padding:20px;
 
 border-radius:10px;
 
+text-align:center;
 }
 
-/* GRID */
+/* PROJECTS */
 
-.grid{
+.projects{
+width:50%;
+}
 
+.project-grid{
 display:grid;
-
 grid-template-columns:repeat(2,1fr);
-
-gap:15px;
-
+gap:20px;
 }
 
-/* CARDS */
-
-.card{
-
-padding:15px;
-
-background:#2563eb;
-
+.project{
+padding:20px;
 border-radius:10px;
-
 text-decoration:none;
-
 color:white;
-
 }
-
-/* PROJECT COLORS */
 
 .excel{background:#22c55e;}
 .sql{background:#ef4444;}
@@ -177,15 +109,23 @@ color:white;
 .python{background:#a855f7;}
 .ml{background:#f59e0b;}
 
+/* PUBLICATIONS */
 
-/* FOOTER */
-
-footer{
-
-text-align:center;
-
-padding:30px;
-
-background:#020617;
-
+.publications{
+padding:40px;
 }
+
+.pub-grid{
+display:flex;
+gap:20px;
+}
+
+.pub{
+padding:20px;
+border-radius:10px;
+text-decoration:none;
+color:white;
+}
+
+.medium{background:black;}
+.newsletter{background:red;}
