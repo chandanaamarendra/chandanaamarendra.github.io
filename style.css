@@ -17,6 +17,7 @@ color:white;
 100%{background-position:0% 50%;}
 }
 
+
 /* ===============================
    PARTICLES
 ================================= */
@@ -31,6 +32,7 @@ z-index:-1;
 pointer-events:none;
 }
 
+
 /* ===============================
    TOP SECTION (Hero + About)
 ================================= */
@@ -42,19 +44,22 @@ align-items:center;
 gap:60px;
 padding:80px;
 min-height:100vh;
-flex-wrap:nowrap;   /* IMPORTANT */
+flex-wrap:wrap;
 }
 
-/* HERO */
+
+/* ===============================
+   HERO
+================================= */
 
 .hero-container{
-flex:1;   /* instead of width:50% */
-min-width:0;
-min-height:80vh;
+flex:1;
+min-width:320px;
+min-height:600px;
 display:flex;
 justify-content:center;
 align-items:center;
-
+background:url("hero-bg.jpg");
 background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
@@ -66,14 +71,18 @@ min-height:520px;
 width:420px;
 padding:50px 40px;
 border-radius:25px;
-background:url("hero-bg.jpg");
-backdrop-filter:blur(8px);
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,0.5);
 }
+
+
+/* PROFILE IMAGE */
 
 .profile{
 width:180px;
@@ -81,23 +90,33 @@ height:180px;
 border-radius:50%;
 object-fit:cover;
 margin-bottom:20px;
+border:4px solid #38bdf8;
 }
+
+
+/* NAME */
 
 .name{
 font-family:'Playfair Display', serif;
-font-size:32px;
+font-size:34px;
+margin-bottom:10px;
 background: linear-gradient(90deg, #f3b0f2, #fdf5b9);
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent;
-margin-bottom:10px;
 }
+
+
+/* TYPING TEXT */
 
 .tagline{
 margin:15px 0;
+font-size:18px;
 color:#cbd5e1;
+min-height:28px;
 }
 
-/* Buttons */
+
+/* BUTTONS */
 
 .buttons{
 margin-top:20px;
@@ -106,28 +125,40 @@ margin-top:20px;
 .btn{
 display:inline-block;
 margin:8px;
-padding:12px 22px;
+padding:12px 24px;
 border-radius:12px;
 text-decoration:none;
 color:white;
-font-weight:500;
+font-weight:600;
 transition:0.3s;
 }
 
 .btn:hover{
-transform:translateY(-3px);
-box-shadow:0 10px 20px rgba(0,0,0,0.4);
+transform:translateY(-4px);
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
 }
 
-.green{background:linear-gradient(45deg,#22c55e,#4ade80);}
-.blue{background:linear-gradient(45deg,#3b82f6,#60a5fa);}
-.orange{background:linear-gradient(45deg,#f97316,#fb923c);}
+.green{
+background:linear-gradient(45deg,#22c55e,#4ade80);
+}
 
-/* ABOUT */
+.blue{
+background:linear-gradient(45deg,#3b82f6,#60a5fa);
+}
+
+.orange{
+background:linear-gradient(45deg,#f97316,#fb923c);
+}
+
+
+
+/* ===============================
+   ABOUT
+================================= */
 
 .about{
-flex:1;   /* instead of width:50% */
-min-width:0;
+flex:1;
+min-width:320px;
 min-height:520px;
 padding:50px;
 border-radius:25px;
@@ -137,19 +168,20 @@ justify-content:center;
 align-items:center;
 text-align:center;
 background: linear-gradient(45deg,#121521,#38476b,#b6192e,#ffc1ac);
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+.about h2{
+margin-bottom:20px;
 }
 
 .about p{
 max-width:600px;
 line-height:1.8;
 }
-@media (max-width:900px){
 
-.top-section{
-flex-direction:column;
-}
 
-}
+
 /* ===============================
    BOTTOM SECTION
 ================================= */
@@ -162,6 +194,8 @@ gap:80px;
 padding:80px;
 flex-wrap:wrap;
 }
+
+
 
 /* ===============================
    SKILLS
@@ -176,14 +210,14 @@ box-shadow:0 10px 30px rgba(0,0,0,0.35);
 }
 
 .skills-section h2{
-margin-bottom:30px;
 text-align:center;
+margin-bottom:30px;
 }
 
 .skills-grid{
 display:grid;
 grid-template-columns:repeat(3,1fr);
-gap:30px;
+gap:25px;
 justify-items:center;
 }
 
@@ -196,7 +230,7 @@ transition:0.3s;
 }
 
 .skill-card:hover{
-transform:scale(1.08);
+transform:scale(1.1);
 }
 
 .skill-card img{
@@ -204,15 +238,7 @@ width:50px;
 height:50px;
 }
 
-/* Responsive Skills */
 
-@media (max-width:900px){
-.skills-grid{grid-template-columns:repeat(2,1fr);}
-}
-
-@media (max-width:500px){
-.skills-grid{grid-template-columns:1fr;}
-}
 
 /* ===============================
    PROJECTS
@@ -224,6 +250,10 @@ padding:50px;
 border-radius:25px;
 background: linear-gradient(45deg,#121521,#38476b,#b6192e,#ffc1ac);
 box-shadow:0 10px 30px rgba(0,0,0,0.35);
+}
+
+.projects h2{
+text-align:center;
 }
 
 .project-grid{
@@ -251,24 +281,32 @@ transform:scale(1.05);
 box-shadow:0 12px 25px rgba(0,0,0,0.4);
 }
 
-/* Colors */
 
-.project.excel{background:linear-gradient(135deg,#16a34a,#4ade80);}
-.project.sql{background:linear-gradient(135deg,#2563eb,#60a5fa);}
-.project.powerbi{background:linear-gradient(135deg,#facc15,#f59e0b); color:black;}
-.project.python{background:linear-gradient(135deg,#0891b2,#22d3ee);}
+/* PROJECT COLORS */
+
+.project.excel{
+background:linear-gradient(135deg,#16a34a,#4ade80);
+}
+
+.project.sql{
+background:linear-gradient(135deg,#2563eb,#60a5fa);
+}
+
+.project.powerbi{
+background:linear-gradient(135deg,#facc15,#f59e0b);
+color:black;
+}
+
+.project.python{
+background:linear-gradient(135deg,#0891b2,#22d3ee);
+}
+
 .project.ml{
 background:linear-gradient(135deg,#9333ea,#ec4899);
 grid-column:span 2;
 }
 
-/* Responsive Projects */
 
-@media (max-width:900px){
-.projects{width:100%;}
-.project-grid{grid-template-columns:1fr;}
-.project.ml{grid-column:span 1;}
-}
 
 /* ===============================
    PUBLICATIONS
@@ -307,8 +345,15 @@ transform:scale(1.08);
 box-shadow:0 10px 25px rgba(0,0,0,0.4);
 }
 
-.medium{background:linear-gradient(135deg,#000000,#333333);}
-.newsletter{background:linear-gradient(135deg,#0077b5,#1d4ed8);}
+.medium{
+background:linear-gradient(135deg,#000000,#333333);
+}
+
+.newsletter{
+background:linear-gradient(135deg,#0077b5,#1d4ed8);
+}
+
+
 
 /* ===============================
    CONTACT
@@ -322,7 +367,6 @@ border-radius:25px;
 background: linear-gradient(45deg,#121521,#38476b,#b6192e,#ffc1ac);
 box-shadow:0 10px 30px rgba(0,0,0,0.35);
 text-align:center;
-color:white;
 }
 
 .contact-links{
@@ -341,6 +385,33 @@ text-decoration:none;
 color:#60a5fa;
 }
 
-footer i{
-margin-right:8px;
+
+
+/* ===============================
+   RESPONSIVE
+================================= */
+
+@media (max-width:900px){
+
+.top-section{
+flex-direction:column;
+}
+
+.bottom-section{
+flex-direction:column;
+align-items:center;
+}
+
+.projects{
+width:100%;
+}
+
+.project-grid{
+grid-template-columns:1fr;
+}
+
+.project.ml{
+grid-column:span 1;
+}
+
 }
