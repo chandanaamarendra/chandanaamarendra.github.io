@@ -1,0 +1,162 @@
+body{
+margin:0;
+font-family:Poppins;
+background:#020617;
+color:white;
+overflow-x:hidden;
+}
+
+/* PARTICLES */
+
+#particles-js{
+position:fixed;
+width:100%;
+height:100%;
+z-index:-1;
+}
+
+/* HERO */
+
+.hero{
+position:fixed;
+width:40%;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(180deg,#020617,#0f172a);
+}
+
+.hero-content{
+text-align:center;
+}
+
+.profile{
+width:180px;
+height:180px;
+border-radius:50%;
+border:4px solid #38bdf8;
+box-shadow:0 0 40px #38bdf8;
+}
+
+/* NAME */
+
+.name{
+font-style:italic;
+font-size:32px;
+color:#38bdf8;
+text-shadow:0 0 30px #38bdf8;
+}
+
+/* ROLE */
+
+.role{
+height:30px;
+}
+
+/* TAGLINE */
+
+.tagline{
+opacity:0.8;
+}
+
+/* BUTTONS */
+
+.buttons{
+display:flex;
+gap:10px;
+justify-content:center;
+margin-top:20px;
+}
+
+.btn{
+padding:10px 20px;
+border-radius:25px;
+text-decoration:none;
+color:white;
+transition:0.4s;
+}
+
+.green{background:#22c55e;}
+.blue{background:#3b82f6;}
+.orange{background:#f59e0b;}
+
+.btn:hover{
+transform:scale(1.15);
+box-shadow:0 0 20px white;
+}
+
+/* MAIN */
+
+.main{
+margin-left:40%;
+padding:50px;
+background:linear-gradient(180deg,#0f172a,#020617);
+}
+
+/* SKILLS */
+
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
+
+/* PROJECTS */
+
+.project-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.card{
+padding:30px;
+border-radius:15px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+transition:0.4s;
+text-align:center;
+}
+
+.card:hover{
+transform:scale(1.15);
+}
+
+/* COLORS */
+
+.excel{background:#16a34a;}
+.powerbi{background:#eab308;}
+.sql{background:#2563eb;}
+.python{background:#0891b2;}
+.ml{background:#9333ea;}
+
+/* PUB */
+
+.pub{
+display:flex;
+gap:20px;
+}
+
+.medium,.newsletter{
+background:black;
+padding:10px 20px;
+border-radius:20px;
+color:white;
+text-decoration:none;
+}
+
+.medium:hover,.newsletter:hover{
+transform:scale(1.15);
+}
+
+/* CONTACT */
+
+.contact{
+position:fixed;
+bottom:20px;
+left:50%;
+transform:translateX(-50%);
+text-align:center;
+}
