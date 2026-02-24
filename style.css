@@ -5,17 +5,17 @@ background:#0f172a;
 color:white;
 }
 
-/* HERO BACKGROUND IMAGE */
+/* HERO */
 
-.hero-bg{
+.hero{
 
-background-image:url("hero-bg.jpg");
+height:100vh;
+
+background:url("hero-bg.jpg");
 
 background-size:cover;
 
 background-position:center;
-
-height:100vh;
 
 display:flex;
 
@@ -27,13 +27,29 @@ position:relative;
 
 }
 
-/* HERO CARD ON IMAGE */
+/* PARTICLES */
+
+#particles-js{
+
+position:absolute;
+
+width:100%;
+
+height:100%;
+
+z-index:1;
+
+}
+
+/* HERO CARD */
 
 .hero-card{
 
-background:rgba(15,23,42,0.75);
+position:relative;
 
-backdrop-filter:blur(10px);
+z-index:2;
+
+background:rgba(15,23,42,0.8);
 
 padding:40px;
 
@@ -43,8 +59,6 @@ text-align:center;
 
 width:400px;
 
-box-shadow:0 0 40px rgba(0,0,0,0.7);
-
 }
 
 /* PROFILE */
@@ -53,11 +67,12 @@ box-shadow:0 0 40px rgba(0,0,0,0.7);
 
 width:150px;
 height:150px;
+
 border-radius:50%;
 
 border:4px solid red;
 
-box-shadow:0 0 25px red;
+box-shadow:0 0 20px red;
 
 }
 
@@ -75,23 +90,15 @@ color:#4ade80;
 
 padding:12px 25px;
 
+margin:5px;
+
 border-radius:10px;
 
 text-decoration:none;
 
-margin:5px;
-
-display:inline-block;
-
 color:white;
 
-transition:0.3s;
-
-}
-
-.btn:hover{
-
-transform:scale(1.1);
+display:inline-block;
 
 }
 
@@ -110,7 +117,7 @@ background:linear-gradient(135deg,#0f172a,#1e293b);
 
 }
 
-/* DUAL */
+/* DUAL SECTION */
 
 .dual{
 
@@ -122,7 +129,19 @@ padding:40px;
 
 }
 
-/* CARDS */
+.box{
+
+flex:1;
+
+background:#1e293b;
+
+padding:20px;
+
+border-radius:10px;
+
+}
+
+/* GRID */
 
 .grid{
 
@@ -134,21 +153,19 @@ gap:15px;
 
 }
 
+/* CARDS */
+
 .card{
 
 padding:15px;
 
-border-radius:10px;
-
 background:#2563eb;
 
-transition:0.3s;
+border-radius:10px;
 
-}
+text-decoration:none;
 
-.card:hover{
-
-transform:scale(1.1);
+color:white;
 
 }
 
@@ -161,49 +178,7 @@ transform:scale(1.1);
 .ml{background:#f59e0b;}
 
 
-/* PUBLICATIONS */
-
-.publications{
-
-padding:40px;
-
-}
-
-.pub-grid{
-
-display:flex;
-
-gap:20px;
-
-}
-
-.pub{
-
-flex:1;
-
-padding:20px;
-
-border-radius:15px;
-
-text-decoration:none;
-
-color:white;
-
-transition:0.3s;
-
-}
-
-.pub:hover{
-
-transform:scale(1.1);
-
-}
-
-.medium{background:black;}
-.newsletter{background:red;}
-
-
-/* CONTACT */
+/* FOOTER */
 
 footer{
 
@@ -212,19 +187,5 @@ text-align:center;
 padding:30px;
 
 background:#020617;
-
-}
-
-/* PARTICLES */
-
-#particles-js{
-
-position:fixed;
-
-width:100%;
-
-height:100%;
-
-z-index:-1;
 
 }
