@@ -3,7 +3,6 @@ margin:0;
 font-family:Poppins;
 background:#020617;
 color:white;
-overflow-x:hidden;
 }
 
 /* PARTICLES */
@@ -15,20 +14,16 @@ height:100%;
 z-index:-1;
 }
 
-/* HERO */
+/* HERO DARK */
 
 .hero{
 position:fixed;
 width:40%;
-height:100vh;
+height:100%;
+background:linear-gradient(180deg,#020617,#030c2a,#020617);
 display:flex;
 justify-content:center;
 align-items:center;
-background:linear-gradient(180deg,#020617,#0f172a);
-}
-
-.hero-content{
-text-align:center;
 }
 
 .profile{
@@ -37,36 +32,33 @@ height:180px;
 border-radius:50%;
 border:4px solid #38bdf8;
 box-shadow:0 0 40px #38bdf8;
+object-fit:cover;
 }
-
-/* NAME */
 
 .name{
-font-style:italic;
-font-size:32px;
 color:#38bdf8;
+font-style:italic;
 text-shadow:0 0 30px #38bdf8;
 }
-
-/* ROLE */
-
-.role{
-height:30px;
-}
-
-/* TAGLINE */
-
-.tagline{
-opacity:0.8;
-}
-
-/* BUTTONS */
 
 .buttons{
 display:flex;
 gap:10px;
 justify-content:center;
-margin-top:20px;
+}
+
+/* BUTTON COLORS */
+
+.green{
+background:linear-gradient(45deg,#22c55e,#4ade80);
+}
+
+.blue{
+background:linear-gradient(45deg,#3b82f6,#60a5fa);
+}
+
+.orange{
+background:linear-gradient(45deg,#f59e0b,#fbbf24);
 }
 
 .btn{
@@ -74,24 +66,27 @@ padding:10px 20px;
 border-radius:25px;
 text-decoration:none;
 color:white;
-transition:0.4s;
 }
-
-.green{background:#22c55e;}
-.blue{background:#3b82f6;}
-.orange{background:#f59e0b;}
 
 .btn:hover{
-transform:scale(1.15);
-box-shadow:0 0 20px white;
+transform:scale(1.1);
 }
 
-/* MAIN */
+/* RIGHT LIGHTER */
 
 .main{
 margin-left:40%;
-padding:50px;
-background:linear-gradient(180deg,#0f172a,#020617);
+padding:40px;
+background:linear-gradient(180deg,#0a1930,#0f2a4a,#0a1930);
+}
+
+/* SECTION GRADIENT */
+
+.section{
+background:linear-gradient(45deg,#0f2a4a,#112240);
+padding:30px;
+margin-bottom:20px;
+border-radius:15px;
 }
 
 /* SKILLS */
@@ -102,7 +97,18 @@ grid-template-columns:repeat(4,1fr);
 gap:20px;
 }
 
-/* PROJECTS */
+/* ICON COLORS */
+
+.excel-icon{color:#22c55e;}
+.powerbi-icon{color:#eab308;}
+.sql-icon{color:#3b82f6;}
+.python-icon{color:#60a5fa;}
+.ml-icon{color:#a855f7;}
+.analysis-icon{color:#38bdf8;}
+.tableau-icon{color:#f97316;}
+.github-icon{color:white;}
+
+/* PROJECT CARDS GRADIENT */
 
 .project-grid{
 display:grid;
@@ -116,47 +122,58 @@ border-radius:15px;
 text-decoration:none;
 color:white;
 font-weight:bold;
-transition:0.4s;
-text-align:center;
+}
+
+.excel{
+background:linear-gradient(45deg,#16a34a,#4ade80);
+}
+
+.powerbi{
+background:linear-gradient(45deg,#eab308,#fde047);
+}
+
+.sql{
+background:linear-gradient(45deg,#2563eb,#60a5fa);
+}
+
+.python{
+background:linear-gradient(45deg,#0891b2,#22d3ee);
+}
+
+.ml{
+background:linear-gradient(45deg,#9333ea,#c084fc);
 }
 
 .card:hover{
-transform:scale(1.15);
+transform:scale(1.1);
 }
 
-/* COLORS */
+/* PUBLICATION BUTTONS */
 
-.excel{background:#16a34a;}
-.powerbi{background:#eab308;}
-.sql{background:#2563eb;}
-.python{background:#0891b2;}
-.ml{background:#9333ea;}
-
-/* PUB */
-
-.pub{
+.pub-buttons{
 display:flex;
 gap:20px;
 }
 
-.medium,.newsletter{
-background:black;
-padding:10px 20px;
-border-radius:20px;
-color:white;
+.pub-btn{
+padding:12px 25px;
+border-radius:25px;
 text-decoration:none;
 }
 
-.medium:hover,.newsletter:hover{
-transform:scale(1.15);
+.medium-btn{
+background:black;
 }
 
-/* CONTACT */
+.newsletter-btn{
+background:linear-gradient(45deg,#0077b5,#00a0dc);
+}
 
-.contact{
-position:fixed;
-bottom:20px;
-left:50%;
-transform:translateX(-50%);
+/* FOOTER */
+
+footer{
+background:#020617;
 text-align:center;
+padding:30px;
+margin-left:40%;
 }
