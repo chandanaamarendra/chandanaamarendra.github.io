@@ -1,92 +1,151 @@
-// ROLES LIST
+/* =========================
+   TYPING ANIMATION
+========================= */
+
 const roles = [
-    "Data Analyst",
-    "Power BI Developer",
-    "SQL Developer",
-    "Python Developer",
-    "ML Enthusiast"
+
+"Data Analyst",
+"Power BI Developer",
+"SQL Developer",
+"Python Developer",
+"ML Enthusiast"
+
 ];
 
 let roleIndex = 0;
 let charIndex = 0;
-let currentRole = "";
 let isDeleting = false;
 
-function typeEffect() {
+function typeEffect(){
 
-    const typingElement = document.getElementById("typing");
+const element = document.getElementById("typing");
 
-    // Safety check (prevents errors if element not loaded)
-    if (!typingElement) return;
+if(!element) return;
 
-    currentRole = roles[roleIndex];
+const currentRole = roles[roleIndex];
 
-    // Typing or deleting text
-    if (isDeleting) {
-        typingElement.textContent = currentRole.substring(0, charIndex--);
-    } else {
-        typingElement.textContent = currentRole.substring(0, charIndex++);
-    }
+if(isDeleting){
 
-    let speed = isDeleting ? 50 : 100;
+element.textContent = currentRole.substring(0, charIndex--);
 
-    // When finished typing
-    if (!isDeleting && charIndex === currentRole.length + 1) {
-        speed = 1200; // pause before deleting
-        isDeleting = true;
-    }
+}else{
 
-    // When finished deleting
-    else if (isDeleting && charIndex === 0) {
-        isDeleting = false;
-        roleIndex = (roleIndex + 1) % roles.length;
-        speed = 300;
-    }
+element.textContent = currentRole.substring(0, charIndex++);
 
-    setTimeout(typeEffect, speed);
+}
+
+let speed = isDeleting ? 50 : 100;
+
+if(!isDeleting && charIndex === currentRole.length){
+
+speed = 1500;
+isDeleting = true;
+
+}
+
+else if(isDeleting && charIndex === 0){
+
+isDeleting = false;
+roleIndex = (roleIndex + 1) % roles.length;
+speed = 300;
+
+}
+
+setTimeout(typeEffect, speed);
+
 }
 
 
-// Start typing after page loads
-document.addEventListener("DOMContentLoaded", function () {
-    typeEffect();
+/* =========================
+   PARTICLES BACKGROUND
+========================= */
+
+function loadParticles(){
+
+particlesJS("particles-js", {
+
+particles: {
+
+number: {
+value: 80,
+density: {
+enable: true,
+value_area: 800
+}
+},
+
+color: {
+value: "#38bdf8"
+},
+
+shape: {
+type: "circle"
+},
+
+opacity: {
+value: 0.5,
+random: false
+},
+
+size: {
+value: 3,
+random: true
+},
+
+move: {
+enable: true,
+speed: 2,
+direction: "none",
+out_mode: "out"
+}
+
+},
+
+interactivity: {
+
+events: {
+
+onhover: {
+enable: true,
+mode: "repulse"
+},
+
+onclick: {
+enable: true,
+mode: "push"
+}
+
+},
+
+modes: {
+
+repulse: {
+distance: 120
+},
+
+push: {
+particles_nb: 4
+}
+
+}
+
+},
+
+retina_detect: true
+
 });
 
+}
 
-// PARTICLES BACKGROUND
-particlesJS("particles-js", {
-    particles: {
-        number: {
-            value: 60,
-            density: {
-                enable: true,
-                value_area: 800
-            }
-        },
-        color: {
-            value: "#38bdf8"
-        },
-        shape: {
-            type: "circle"
-        },
-        opacity: {
-            value: 0.5
-        },
-        size: {
-            value: 3,
-            random: true
-        },
-        move: {
-            enable: true,
-            speed: 2
-        }
-    },
-    interactivity: {
-        events: {
-            onhover: {
-                enable: true,
-                mode: "repulse"
-            }
-        }
-    }
+
+/* =========================
+   LOAD EVERYTHING
+========================= */
+
+document.addEventListener("DOMContentLoaded", function(){
+
+typeEffect();
+
+loadParticles();
+
 });
