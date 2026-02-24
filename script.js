@@ -46,13 +46,83 @@ setTimeout(type,deleting?50:100);
 
 type();
 
-particlesJS("particles-js",{
+particlesJS("particles-js", {
 
-particles:{
-number:{value:80},
-size:{value:3},
-move:{speed:2},
-line_linked:{enable:false}
+particles: {
+
+number: {
+value: 120,
+density: {
+enable: true,
+value_area: 800
 }
+},
+
+color: {
+value: ["#38bdf8", "#818cf8", "#22c55e", "#c084fc"]
+},
+
+shape: {
+type: "circle"
+},
+
+opacity: {
+value: 0.6,
+random: true
+},
+
+size: {
+value: 4,
+random: true
+},
+
+line_linked: {
+enable: false
+},
+
+move: {
+enable: true,
+speed: 2.5,
+direction: "none",
+random: true,
+straight: false,
+out_mode: "out"
+}
+
+},
+
+interactivity: {
+
+detect_on: "canvas",
+
+events: {
+
+onhover: {
+enable: true,
+mode: "repulse"
+},
+
+onclick: {
+enable: true,
+mode: "push"
+}
+
+},
+
+modes: {
+
+repulse: {
+distance: 100
+},
+
+push: {
+particles_nb: 4
+}
+
+}
+
+},
+
+retina_detect: true
 
 });
