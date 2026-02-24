@@ -3,7 +3,7 @@
 body{
 margin:0;
 font-family:'Poppins', sans-serif;
-background:linear-gradient(135deg, #0f172a, #1e293b, #020617);
+background: linear-gradient(135deg, #f8ede3, #e6b8a2, #8d6e63);
 color:white;
 }
 
@@ -146,37 +146,53 @@ gap:60px;
 
 .skills-grid{
 display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:25px;
+grid-template-columns:repeat(2, 280px);
+gap:20px;
 }
 
 .skill-card{
 display:flex;
 align-items:center;
 gap:15px;
-padding:22px 30px;
-border-radius:18px;
+
+width:280px;
+height:75px;
+
+padding:0 20px;
+
+border-radius:15px;
+
 font-size:18px;
 font-weight:600;
 color:white;
+
+box-shadow:0 6px 15px rgba(0,0,0,0.25);
+
 transition:0.3s;
+}
+
+.skill-card:hover{
+transform:translateY(-4px);
 }
 
 .icon-box{
 background:white;
-padding:8px;
+width:45px;
+height:45px;
+
 border-radius:10px;
+
 display:flex;
 align-items:center;
 justify-content:center;
 }
 
 .icon-box img{
-width:32px;
-height:32px;
+width:28px;
+height:28px;
 }
 
-/* SAME COLORS */
+/* COLORS SAME AS IMAGE 1 */
 
 .excel{
 background:linear-gradient(90deg,#16a34a,#4ade80);
@@ -202,12 +218,6 @@ background:linear-gradient(90deg,#9333ea,#c084fc);
 .ml{
 background:linear-gradient(90deg,#ec4899,#f472b6);
 }
-
-.skill-card:hover{
-transform:translateY(-6px);
-}
-
-/* PROJECTS */
 
 /* PROJECTS SECTION */
 
@@ -324,7 +334,7 @@ box-shadow:0 8px 20px rgba(0,0,0,0.3);
 
 .publications{
 padding:20px 60px 40px 60px;
-margin-top:-20px;   /* pulls section upward */
+margin-top:-20px;  
 text-align:center;
 }
 
