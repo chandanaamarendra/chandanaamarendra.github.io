@@ -165,11 +165,11 @@ align-items:center;
 
 display:flex;
 
-gap:40px;
+gap:60px;
 
 padding:60px;
 
-align-items:center;
+align-items:flex-start;
 
 }
 
@@ -177,13 +177,23 @@ align-items:center;
 /* SKILLS SECTION SMALLER */
 
 .skills-section{
-width:40%;
+
+width:35%;
+
+padding:20px 0;
+
 }
 
 .skills-grid{
+
 display:grid;
-grid-template-columns:repeat(3,120px);
-gap:20px;
+
+grid-template-columns:repeat(3, 1fr);
+
+gap:40px;
+
+margin-top:30px;
+
 }
 
 /* skill card vertical layout */
@@ -246,29 +256,17 @@ justify-content:center;
 }
 
 
-.project{
+.projects{
 
-display:flex;
+width:65%;
 
-align-items:center;
+padding:40px;
 
-justify-content:center;
+border-radius:25px;
 
-height:80px;
+background: linear-gradient(45deg,#121521,#38476b,#b6192e,#ffc1ac);
 
-border-radius:15px;
-
-font-weight:600;
-
-font-size:18px;
-
-text-decoration:none;
-
-color:white;
-
-box-shadow:0 6px 15px rgba(0,0,0,0.3);
-
-transition:0.3s;
+box-shadow:0 10px 30px rgba(0,0,0,0.35);
 
 }
 
