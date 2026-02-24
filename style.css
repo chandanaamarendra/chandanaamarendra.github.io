@@ -57,7 +57,7 @@ margin-bottom:15px;
 .name{
 font-family: 'Playfair Display', serif;
 font-size:42px;
-background: linear-gradient(45deg, #121521, #38476b, #b6192e, #ffc1ac);
+background: linear-gradient(45deg, #faee21, #f6e600, #00ffff);
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent;
 margin-bottom:10px;
@@ -202,7 +202,8 @@ gap:60px;
 /* PROJECTS SECTION */
 
 .projects{
-width:60%;
+width:55%;
+margin-left:auto;   /* pushes projects to right */
 }
 
 .project-grid{
@@ -312,7 +313,8 @@ box-shadow:0 8px 20px rgba(0,0,0,0.3);
 /* PUBLICATIONS */
 
 .publications{
-padding:60px;
+padding:20px 60px 40px 60px;
+margin-top:-20px;   /* pulls section upward */
 text-align:center;
 }
 
