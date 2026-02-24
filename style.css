@@ -1,96 +1,136 @@
 body{
+
 margin:0;
 font-family:Poppins;
-background: linear-gradient(135deg, #f8ede3, #e6b8a2, #8d6e63);
+
+background: linear-gradient(-45deg,#f8ede3,#e6b8a2,#8d6e63,#121521);
+
+background-size:400% 400%;
+
+animation:gradientMove 12s ease infinite;
+
+color:white;
+
 }
 
-/* TOP */
+@keyframes gradientMove{
 
-.top-section{
-display:flex;
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+
 }
+
+
+/* particles */
+
+#particles-js{
+
+position:fixed;
+width:100%;
+height:100%;
+top:0;
+left:0;
+z-index:-1;
+
+}
+
+
+/* hero */
 
 .hero-container{
+
 width:50%;
 display:flex;
 justify-content:center;
 align-items:center;
+
+background:url("hero-bg.jpg");
+
+background-size:cover;
+background-position:center;
+
 }
 
 .hero-card{
+
+background:rgba(0,0,0,0.5);
 padding:40px;
 border-radius:20px;
-background:#111;
-color:white;
+
 }
+
 
 .profile{
+
 width:150px;
 border-radius:50%;
-}
 
-.about{
-width:50%;
-padding:80px;
-border-radius:20px;
-background: linear-gradient(45deg,#121521,#38476b,#b6192e,#ffc1ac);
-color:white;
 }
 
 
-/* BOX STYLE */
+/* box style */
 
 .box{
-background: linear-gradient(45deg,#121521,#38476b,#b6192e,#ffc1ac);
+
+background:linear-gradient(45deg,#121521,#38476b,#b6192e,#ffc1ac);
+
 padding:40px;
+
 border-radius:20px;
-color:white;
+
 }
 
 
-/* BOTTOM */
+/* layout */
+
+.top-section{
+
+display:flex;
+
+}
 
 .bottom-section{
+
 display:flex;
+
 gap:40px;
+
 padding:60px;
+
 }
 
 
-/* SKILLS */
-
-.skills-section{
-width:50%;
-}
+/* skills */
 
 .skills-grid{
+
 display:grid;
-grid-template-columns:repeat(2,280px);
+
+grid-template-columns:repeat(2,240px);
+
 gap:20px;
+
 }
 
 .skill-card{
+
 display:flex;
 align-items:center;
+
 gap:15px;
-width:280px;
+
+width:240px;
 height:70px;
-padding:10px;
+
 border-radius:15px;
-color:white;
+
+padding:10px;
+
 }
 
-.icon-box{
-background:white;
-padding:5px;
-border-radius:10px;
-}
 
-.icon-box img{
-width:30px;
-}
-
-/* COLORS */
+/* skill colors */
 
 .excel{background:linear-gradient(90deg,#16a34a,#4ade80);}
 .sql{background:linear-gradient(90deg,#2563eb,#60a5fa);}
@@ -100,74 +140,59 @@ width:30px;
 .ml{background:linear-gradient(90deg,#ec4899,#f472b6);}
 
 
-/* PROJECTS */
-
-.projects{
-width:50%;
-}
+/* projects */
 
 .project-grid{
+
 display:grid;
+
 grid-template-columns:repeat(2,1fr);
+
 gap:20px;
+
 }
 
 .project{
+
 padding:20px;
+
 border-radius:15px;
-text-decoration:none;
-color:white;
-}
 
-.project.excel{background:green;}
-.project.sql{background:blue;}
-.project.powerbi{background:orange;}
-.project.python{background:teal;}
-.project.ml{background:purple;}
-
-
-/* PUBLICATIONS */
-
-.publications{
-margin:60px;
 text-align:center;
+
+color:white;
+
+text-decoration:none;
+
 }
+
+
+/* publications */
 
 .pub{
+
 padding:15px 25px;
+
 border-radius:10px;
+
 color:white;
+
 text-decoration:none;
+
 }
 
 .medium{background:black;}
 .newsletter{background:blue;}
 
 
-/* CONTACT */
+/* contact */
 
 footer{
+
 text-align:center;
+
 padding:40px;
+
 background:#020617;
-color:white;
-}
 
-footer a{
-color:#38bdf8;
-text-decoration:none;
-}
-
-#particles-js{
-position:absolute;
-width:100%;
-height:100%;
-top:0;
-left:0;
-z-index:0;
-}
-
-.hero-card{
-position:relative;
-z-index:1;
 }
