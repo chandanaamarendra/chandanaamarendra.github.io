@@ -57,7 +57,7 @@ margin-bottom:15px;
 .name{
 font-family: 'Playfair Display', serif;
 font-size:42px;
-background: linear-gradient(45deg, #f960eb, #ff854d, #fff41f);
+background: linear-gradient(90deg, #f3b0f2, #fdf5b9);
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent;
 margin-bottom:10px;
@@ -124,7 +124,7 @@ background: linear-gradient(45deg, #121521, #38476b, #b6192e, #ffc1ac);
 font-family: 'Playfair Display', serif;
 font-style: italic;
 font-size:44px;
-background: linear-gradient(45deg, #f960eb, #ff854d, #fff41f);
+background: linear-gradient(90deg, #f3b0f2, #fdf5b9);;
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent;
 }
