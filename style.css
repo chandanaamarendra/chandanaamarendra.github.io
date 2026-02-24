@@ -55,9 +55,9 @@ margin-bottom:15px;
 /* NAME */
 
 .name{
-font-family: "Mangolia Script", cursive;
-font-size:36px;
-background:linear-gradient(45deg, #faee21, #f6e600, #00ffff);
+font-family: 'Playfair Display', serif;
+font-size:42px;
+background: linear-gradient(45deg, #121521, #38476b, #b6192e, #ffc1ac);
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent;
 margin-bottom:10px;
